@@ -1,0 +1,66 @@
+/* General */
+body {
+    font-family: Arial;
+    margin-left: 5%;
+}
+img {
+    display: inline-block;
+    max-width: 80%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+/* Intro */
+.intro__text {
+    width: 91%;
+}
+
+/* Web */
+.web__gode, .web__segw {
+    clear: left;
+}
+.web__heading {
+    padding-top: 1%;
+}
+.web__gode--img, .web__segw--img {
+    float: left;
+    width: 40%;
+    padding-right: 1%;
+}
+.web__gode--text, .web__segw--text {
+    float: left;
+    width: 50%;
+}
+
+/* Games */
+.games, .games__ohw, .games__dd, .games__ddre {
+    clear: left;
+}
+.games__heading {
+    padding-top: 1%;
+}
+.games__ohw--img, .games__dd--img, .games__ddre--img {
+    float: left;
+    width: 40%;
+    padding-right: 1%;
+}
+.games__ohw--text, .games__dd--text, .games__ddre--text {
+    float: left;
+    width: 50%;
+}
+
+/* Contact */
+.contact {
+    clear: left;
+    width: 91%;
+}
+.contact__heading {
+    padding-top: 1%;
+}
+
+/* Socials */
+.socials {
+    clear: left;
+    width: 91%;
+}
