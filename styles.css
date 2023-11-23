@@ -16,6 +16,11 @@ img {
     width: 91%;
 }
 
+/* Carousel */
+.carousel {
+    width: 50%;
+}
+
 /* Web */
 .web__gode, .web__segw {
     clear: left;
