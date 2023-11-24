@@ -1,4 +1,9 @@
 /* General */
+/* This is for a header that will fill the viewport's height
+header {
+    height: 100vh;
+    height: 100svh;
+}*/
 body {
     font-family: Arial;
     margin-left: 5%;
@@ -6,20 +11,16 @@ body {
 }
 
 /* Intro */
-.intro__text {
-    width: 91%;
-}
 
 /* Carousel */
 .carousel {
     width: 100%;
 }
 .carousel__item {
-    height: auto;
+    object-fit: contain;
 }
 .carousel__img {
-    height: auto;
-    width: auto;
+    object-fit: contain;
 }
 
 /* Web */
