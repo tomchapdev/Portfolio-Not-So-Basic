@@ -76,36 +76,46 @@
         <div class="games__heading">
             <h2>Games</h2>
         </div>
-        <div class="games__ohw">
-            <div class="games__ohw--img">
-                <img src="img/OHW Evil Eye.png" alt="Demonic eye shooting a fireball at an archer">
+
+        <div id="games_carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#games_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#games_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#games_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel__item">
+                    <img class="d-block w-100 carousel__img" src="img/OHW Evil Eye.png" alt="Demonic eye shooting a fireball at an archer">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>One Hit Wonder</h3>
+                        <p>I worked within the Nebulous Remote indie team as a temporary gameplay programmer
+                        to help release One Hit Wonder onto the itch.io store. You can find my code
+                        <a href="https://gitlab.com/Bambo-Borris/one-hit-wonder/-/commits/main?author=Thomas%20Chapman">here</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel__item">
+                    <img class="d-block w-100 carousel__img" src="img/DD Menu.png" alt="A knight being swarmed by demons">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Deadly Dungeon</h3>
+                        <p>I developed this using C++ and SFML as an end of year 1 project. It's a 2D top down arena based survival
+                        game with 4 different enemies, 3 different weapons, and multiple power ups located at shops around the map.</p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel__item">
+                    <img class="d-block w-100 carousel__img" src="img/DD Room Editor.png" alt="A level editing tool for Deadly Dungeon">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Deadly Dungeon Room Editor</h3>
+                        <p>I created this tool to be able to visually edit the game's map in Deadly Dungeon.</p>
+                </div>
             </div>
-            <div class="games__ohw--text">
-                <h3>One Hit Wonder</h3>
-                <p>I worked with the Nebulous Remote indie team as a temporary gameplay programmer
-                    to help release the game onto the itch.io store. You can find my code
-                <a href="https://gitlab.com/Bambo-Borris/one-hit-wonder/-/commits/main?author=Thomas%20Chapman">here</a></p>
-            </div>
-        </div>
-        <div class="games__dd">
-            <div class="games__dd--img">
-                <img src="img/DD Menu.png" alt="A lone knight being swarmed by demons">
-            </div>
-            <div class="games__dd--text">
-                <h3>Deadly Dungeon</h3>
-                <p>I developed this using C++ and SFML as an end of year 1 project. It's a 2D top down arena based survival
-                    game with 4 different enemies, 3 different weapons, and multiple power ups located at shops around the
-                    map.</p>
-            </div>
-        </div>
-        <div class="games__ddre">
-            <div class="games__ddre--img">
-                <img src="img/DD Room Editor.png" alt="A level editing tool for Deadly Dungeon">
-            </div>
-            <div class="games__ddre--text">
-                <h3>Deadly Dungeon Room Editor</h3>
-                <p>I created this tool to be able to visually edit the game's map in Deadly Dungeon.</p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#games_carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#games_carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
     <section class="contact" id="contact">
