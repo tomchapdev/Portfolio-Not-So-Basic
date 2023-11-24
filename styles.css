@@ -1,14 +1,34 @@
 /* General */
-/* This is for a header that will fill the viewport's height
+/* This is for a header that will fill the viewport's height, minus 5 for the navbar
 header {
-    height: 100vh;
-    height: 100svh;
+    height: 95vh;
+    height: 95svh;
 }*/
 body {
     font-family: Arial;
+    margin-top: 5vh;
+}
+section, footer {
     margin-left: 5%;
     margin-right: 5%;
 }
+a:focus {
+    scroll-margin: 5vh;
+    background: red;
+}
+
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 5vh;
+    background: black;
+    font-size: 2vh;
+}
+
 
 /* Intro */
 
