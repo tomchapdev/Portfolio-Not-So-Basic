@@ -17,8 +17,7 @@ body {
     position: relative;
 }
 section, footer {
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 0 5%;
 }
 a:focus {
     scroll-margin: 40px;
@@ -76,6 +75,20 @@ a:focus {
 }
 
 /* Intro */
+.intro {
+    background-color: #FFEBE7;
+}
+.intro h1 {
+    color: #7F95D1;
+}
+.intro__text {
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .intro__text {
+        
+    }
+}
 
 /* Carousel */
 .carousel {

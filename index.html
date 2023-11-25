@@ -18,27 +18,38 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
+        <!--Content: navbar, logo and nav links-->
+        <!--Style: Fixed to top, black background, soft blue logo <tomchapdev>, pink navbar text with inverted colour scrollspy-->
         <div class="navbar container-fluid pt-0" id="navbar">
             <h3 class="navbar__title justify-content-start"><code>&lt;tomchapdev&gt;</code></h3>
             <nav class="nav navbar__links justify-content-end" id="nav">
-            <a class="nav-link active" aria-current="page" href="#">Top</a>
-            <a class="nav-link" href="#intro">Intro</a>
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#web">Websites</a>
-            <a class="nav-link" href="#games">Games</a>
-            <a class="nav-link" href="#contact">Contact Me</a>
-          </nav>
+                <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#web">Websites</a>
+                <a class="nav-link" href="#games">Games</a>
+                <a class="nav-link" href="#contact">Contact Me</a>
+            </nav>
         </div>
     </header>
     <section class="intro" id="intro">
-        <!--Content: Description of me as a developer, my skills, my aspirations-->
+        <!--Content: Description and picture of me-->
         <!--Style: Small Text. Short paragraph, looks neat, not a wall of text-->
-        <div class="intro__text">
-            <h1>Thomas Chapman</h1>
-            <p>Welcome to my portfolio!<br>
-            I'm an aspiring software developer who also makes games for fun.</p>
+        <div class="container">
+            <div class="row">
+                <div class="intro__img col-md-6 col-sm-12">
+                    <img class="intro__img img-fluid" src="img/Strange man I found on the internet.png" alt="Bald bearded smiley man, it's Thomas Chapman">
+                </div>
+                <div class="intro__text col-md-6 col-sm-12">
+                    <h1 class="intro__name text-center text-md-start">Thomas Chapman</h1>
+                    <p class="intro__description text-center text-md-start">Welcome to my portfolio!<br>
+                    I'm an aspiring software developer who makes games in my free time, it's a fun way to learn new programming concepts.</p>
+                </div>
+            </div>
         </div>
-        <div class="intro__text">
+    </section>
+    <section class="skills" id="skills">
+        <!-- Content: -->
+        <div class="skills__text">
             <p>Intermediate: C++, Basic: C#, SQL, Assembly, HTML, CSS, Bootsrap, JavaScript, and NodeJS.<br>
             Knowledge: Agile Development, Object Oriented Programming, various Source Control (mainly Git), various Kanban (mainly Trello), and much more!</p>
         </div>
