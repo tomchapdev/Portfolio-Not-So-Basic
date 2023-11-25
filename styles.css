@@ -1,12 +1,19 @@
 /* General */
-/* This is for a header that will fill the viewport's height, minus 5 for the navbar
+/* This is for a header that will fill the viewport's height, minus 40px for the navbar
 header {
-    height: 95vh;
-    height: 95svh;
-}*/
+    height: calc(100vh - 40px);
+    height: calc(100svh - 40px);
+}
+This is the colour scheme
+Black: 000000
+Vista Blue: 7F95D1
+Tickle me pink: FF82A9
+Melon: FFC0BE
+Misty rose: FFEBE7
+*/
 body {
     font-family: Arial;
-    margin-top: 5vh;
+    margin-top: 40px;
     position: relative;
 }
 section, footer {
@@ -14,24 +21,58 @@ section, footer {
     margin-right: 5%;
 }
 a:focus {
-    scroll-margin: 5vh;
+    scroll-margin: 40px;
+    color: white;
     background: red;
 }
-
 
 /* Navbar */
 .navbar {
     position: fixed;
     top: 0;
     z-index: 9999;
-    width: 100%;
-    height: 5vh;
+    height: 40px;
     background: black;
-    font-size: 2vh;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 10px;
+}
+.navbar h3 {
+    margin: 0;
+    padding: 0;
+}
+.nav-link {
+    height: 30px;
+    margin: auto;
+    padding: 3px 10px;
+    border-radius: 5px;
 }
 .nav-link.active {
-    color: red;
-    background-color: rgb(116, 60, 234);
+    color: black;
+    background-color: #FF82A9;
+}
+.navbar a:focus {
+    scroll-margin: 40px;
+    color: white;
+    background: red;
+}
+@media (max-width: 666px) {
+    .navbar {
+        font-size: 14px;
+        padding: 0 3px;
+    }
+    .navbar h3 {
+        font-size: 20px;
+    }
+    .nav-link {
+        padding: 5px 8px;
+    }
+}
+.navbar code {
+    color: #7F95D1;
+}
+.navbar a {
+    color: #FF82A9;
 }
 
 /* Intro */
