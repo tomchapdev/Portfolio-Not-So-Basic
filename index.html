@@ -40,7 +40,7 @@
                     <img class="intro__img img-fluid" src="img/Strange man I found on the internet.png" alt="Bald bearded smiley man, it's Thomas Chapman">
                 </div>
                 <div class="intro__text col-md-6 col-sm-12">
-                    <h1 class="intro__name text-center text-md-start">Thomas Chapman</h1>
+                    <h1 class="intro__name heading text-center text-md-start">Thomas Chapman</h1>
                     <p class="intro__description text-center text-md-start">Welcome to my portfolio!<br>
                     I'm an aspiring software developer who makes games in my free time, it's a fun way to learn new programming concepts.<br>
                     An outgoing and geeky guy who loves to have a few beers, come join me for a few!</p>
@@ -54,9 +54,29 @@
         <div class="skills__heading heading">
             <h2>Skills</h2>
         </div>
-        <div class="skills__text">
-            <p>Intermediate: C++, Basic: C#, SQL, Assembly, HTML, CSS, Bootsrap, JavaScript, and NodeJS.<br>
-            Knowledge: Agile Development, Object Oriented Programming, various Source Control (mainly Git), various Kanban (mainly Trello), and much more!</p>
+        <div class="row">
+            <div class="card col-md-4 col-6">
+                <div class="card-body">
+                    <h5 class="card-title">Intermediate Skills</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Languages:</h6>
+                    <p class="card-text">C++</p>
+                </div>
+            </div>
+            <div class="card col-md-4 col-6">
+                <div class="card-body">
+                    <h5 class="card-title">Basic Skills</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Languages:</h6>
+                    <p class="card-text">C#, SQL, Assembly, HTML, CSS, Bootstrap, JavaScript, and NodeJS.</p>
+                </div>
+            </div>
+            <div class="card col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">General Knowledge</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Development Concepts:</h6>
+                    <p class="card-text">Object Oriented Programming, Agile Development, various Source Control (mainly Git),
+                    various Kanban (mainly Trello), Unit Testing, and much more!</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -73,7 +93,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active carousel__item">
                     <img class="d-block w-100 carousel__img" src="img/exportData.png" alt="Data being exported">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block carousel__text rounded">
                         <h3>Game Object Data Exporter</h3>
                         <p>Coming soon! A single page site used to input, edit, and export data about various game objects into json,
                             which can then be used in the game.</p>
@@ -81,7 +101,7 @@
                 </div>
                 <div class="carousel-item carousel__item">
                     <img class="d-block w-100 carousel__img" src="img/digger.jpg" alt="Digger excavating dirt">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block carousel__text rounded">
                         <h3>SEGW</h3>
                         <p>Coming soon! A website for a construction company.</p>
                     </div>
@@ -113,7 +133,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active carousel__item">
                     <img class="d-block w-100 carousel__img" src="img/OHW Evil Eye.png" alt="Demonic eye shooting a fireball at an archer">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block carousel__text rounded">
                         <h3>One Hit Wonder</h3>
                         <p>I worked within the Nebulous Remote indie team as a temporary gameplay programmer
                         to help release One Hit Wonder onto the itch.io store. You can find my code
@@ -122,7 +142,7 @@
                 </div>
                 <div class="carousel-item carousel__item">
                     <img class="d-block w-100 carousel__img" src="img/DD Menu.png" alt="A knight being swarmed by demons">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block carousel__text rounded">
                         <h3>Deadly Dungeon</h3>
                         <p>I developed this using C++ and SFML as an end of year 1 project. It's a 2D top down arena based survival
                         game with 4 different enemies, 3 different weapons, and multiple power ups located at shops around the map.</p>
@@ -130,7 +150,7 @@
                 </div>
                 <div class="carousel-item carousel__item">
                     <img class="d-block w-100 carousel__img" src="img/DD Room Editor.png" alt="A level editing tool for Deadly Dungeon">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block carousel__text rounded">
                         <h3>Deadly Dungeon Room Editor</h3>
                         <p>I created this tool to be able to visually edit the game's map in Deadly Dungeon.</p>
                 </div>
@@ -152,16 +172,30 @@
             <h2>Contact Me</h2>
         </div>
         <div class="contact__text">
-            <p>If you'd like to contact me about a job opportunity or any projects pitches then feel free to send me an email!<br>
-                Email: tomchapdev@gmail.com</p>
+            <p>If you'd like to contact me about a job opportunity or any projects pitches please feel free to contact me!</p>
         </div>
+        <form>
+            <div class="mb-2">
+                <label for="form_name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="form_name">
+              </div>
+            <div class="mb-2">
+              <label for="form_email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="form_email">
+            </div>
+            <div class="mb-2">
+              <label for="form_text" class="form-label">Text</label>
+              <input type="text" class="form-control" id="form_text">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </section>
 
     <!-- Footer (maybe socials?) -->
     <footer>
         <div class="footer container-fluid d-flex justify-content-between" id="footer">
             <h3 class="pt-1"><code>&lt;/tomchapdev&gt;</code></h3>
-            <p class="m-y-auto pt-2">Thank you for reading!</p>
+            <p class="pt-2">Thank you for reading!</p>
         </div>
     </footer>
 </body>

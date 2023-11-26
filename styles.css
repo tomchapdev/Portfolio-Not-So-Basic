@@ -17,10 +17,10 @@ body {
     position: relative;
 }
 section {
-    padding: 0 5%;
+    padding: 0 5% 1rem 5%;
 }
-section h2 {
-    
+section .heading {
+    padding-top: 1rem;
 }
 a:focus {
     scroll-margin: 40px;
@@ -94,6 +94,11 @@ a:focus {
     margin: auto;
 }
 
+/* Skills */
+.skills {
+    background-color: #FFC0BE;
+}
+
 /* Carousel */
 .carousel {
     width: 100%;
@@ -104,20 +109,31 @@ a:focus {
 .carousel__img {
     object-fit: contain;
 }
+.carousel__text {
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px 4px;
+}
 
 /* Web */
+.web {
+    background-color: #FFEBE7;
+}
 .web__heading {
     padding-top: 1%;
 }
 
 /* Games */
+.games {
+    background-color: #FFC0BE;
+}
 .games__heading {
     padding-top: 1%;
 }
 
 /* Contact */
+.contact {
+    background-color: #FFEBE7;
+}
 .contact__heading {
     padding-top: 1%;
 }
-
-/* Footer */
