@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
+    
+    <!-- Navbar -->
     <header>
-        <!--Content: navbar, logo and nav links-->
-        <!--Style: Fixed to top, black background, soft blue logo <tomchapdev>, pink navbar text with inverted colour scrollspy-->
         <div class="navbar container-fluid pt-0" id="navbar">
-            <h3 class="navbar__title justify-content-start"><code>&lt;tomchapdev&gt;</code></h3>
-            <nav class="nav navbar__links justify-content-end" id="nav">
+            <h3 class="navbar__title"><code>&lt;tomchapdev&gt;</code></h3>
+            <nav class="nav navbar__links" id="nav">
                 <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
                 <a class="nav-link" href="#skills">Skills</a>
                 <a class="nav-link" href="#web">Websites</a>
@@ -31,9 +31,9 @@
             </nav>
         </div>
     </header>
+
+    <!-- Introduction -->
     <section class="intro" id="intro">
-        <!--Content: Description and picture of me-->
-        <!--Style: Small Text. Short paragraph, looks neat, not a wall of text-->
         <div class="container">
             <div class="row">
                 <div class="intro__img col-md-6 col-sm-12">
@@ -42,22 +42,27 @@
                 <div class="intro__text col-md-6 col-sm-12">
                     <h1 class="intro__name text-center text-md-start">Thomas Chapman</h1>
                     <p class="intro__description text-center text-md-start">Welcome to my portfolio!<br>
-                    I'm an aspiring software developer who makes games in my free time, it's a fun way to learn new programming concepts.</p>
+                    I'm an aspiring software developer who makes games in my free time, it's a fun way to learn new programming concepts.<br>
+                    An outgoing and geeky guy who loves to have a few beers, come join me for a few!</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Skills -->
     <section class="skills" id="skills">
-        <!-- Content: -->
+        <div class="skills__heading heading">
+            <h2>Skills</h2>
+        </div>
         <div class="skills__text">
             <p>Intermediate: C++, Basic: C#, SQL, Assembly, HTML, CSS, Bootsrap, JavaScript, and NodeJS.<br>
             Knowledge: Agile Development, Object Oriented Programming, various Source Control (mainly Git), various Kanban (mainly Trello), and much more!</p>
         </div>
     </section>
+
+    <!-- Websites -->
     <section class="web" id="web">
-        <!--Content: GODE and SEGW placeholder images with descriptions-->
-        <!--Style: Showcase. Widgets going horizontally, but vertical or slideshow if on mobile?-->
-        <div class="web__heading">
+        <div class="web__heading heading">
             <h2>Websites</h2>
         </div>
         <div id="web_carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -92,10 +97,10 @@
             </button>
         </div>
     </section>
+
+    <!-- Games -->
     <section class="games" id="games">
-        <!--Content: Deadly Dungeon, Crikey, One Hit Wonder images with descriptions-->
-        <!--Style: Showcase. Widgets going horizontally, but vertical or slideshow if on mobile?-->
-        <div class="games__heading">
+        <div class="games__heading heading">
             <h2>Games</h2>
         </div>
 
@@ -140,10 +145,10 @@
             </button>
         </div>
     </section>
+
+    <!-- Contact Me -->
     <section class="contact" id="contact">
-        <!--Content: Professional email and reasons to contact-->
-        <!--Style: Small Text. Short paragraph, looks neat, not a wall of text-->
-        <div class="contact__heading">
+        <div class="contact__heading heading">
             <h2>Contact Me</h2>
         </div>
         <div class="contact__text">
@@ -151,7 +156,12 @@
                 Email: tomchapdev@gmail.com</p>
         </div>
     </section>
-    <footer class="socials" id="socials">
-        <p>Thank you for reading!</p>
+
+    <!-- Footer (maybe socials?) -->
+    <footer>
+        <div class="footer container-fluid d-flex justify-content-between" id="footer">
+            <h3 class="pt-1"><code>&lt;/tomchapdev&gt;</code></h3>
+            <p class="m-y-auto pt-2">Thank you for reading!</p>
+        </div>
     </footer>
 </body>

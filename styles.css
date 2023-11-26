@@ -16,8 +16,11 @@ body {
     margin-top: 40px;
     position: relative;
 }
-section, footer {
+section {
     padding: 0 5%;
+}
+section h2 {
+    
 }
 a:focus {
     scroll-margin: 40px;
@@ -31,10 +34,6 @@ a:focus {
     top: 0;
     z-index: 9999;
     height: 40px;
-    background: black;
-    font-size: 16px;
-    margin: 0;
-    padding: 0 10px;
 }
 .navbar h3 {
     margin: 0;
@@ -56,21 +55,31 @@ a:focus {
     background: red;
 }
 @media (max-width: 666px) {
-    .navbar {
-        font-size: 14px;
-        padding: 0 3px;
-    }
-    .navbar h3 {
-        font-size: 20px;
-    }
     .nav-link {
         padding: 5px 8px;
     }
 }
-.navbar code {
+
+/* Navbar & Footer */
+.navbar, .footer {
+    background: black;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 10px;
+}
+@media (max-width: 666px) {
+    .navbar, .footer {
+        font-size: 14px;
+        padding: 0 3px;
+    }
+    .navbar h3, .footer h3 {
+        font-size: 20px;
+    }
+}
+.navbar code, .footer code {
     color: #7F95D1;
 }
-.navbar a {
+.navbar a, .footer p {
     color: #FF82A9;
 }
 
@@ -83,11 +92,6 @@ a:focus {
 }
 .intro__text {
     margin: auto;
-}
-@media (max-width: 768px) {
-    .intro__text {
-        
-    }
 }
 
 /* Carousel */
@@ -116,8 +120,4 @@ a:focus {
     padding-top: 1%;
 }
 
-/* Socials */
-.socials {
-    clear: left;
-    width: 91%;
-}
+/* Footer */
