@@ -98,6 +98,9 @@ a:focus {
 .skills {
     background-color: #FFC0BE;
 }
+.skills__card {
+    background-color: #FFEBE7;
+}
 
 /* Carousel */
 .carousel {
@@ -111,6 +114,7 @@ a:focus {
 }
 .carousel__text {
     background-color: rgba(0,0,0,0.5);
+    color: #FFEBE7;
     padding: 4px 4px;
 }
 
